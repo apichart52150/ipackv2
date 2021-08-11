@@ -1,0 +1,57 @@
+:root {
+  --drag-primary-color: #3b73da;
+  --drag-success-color: #2bc3a5;
+  --drag-danger-color: #f64f69;
+}
+
+body {
+  user-select: none;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.drag {
+  position: relative;
+  padding: 3px 5px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  background: var(--drag-primary-color);
+  box-shadow: 0 5px 5px rgba(48, 34, 34, 0.3);
+  height: auto;
+}
+
+i.fa-check, i.fa-times {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.color-success {
+  background: var(--drag-success-color);
+}
+
+.color-danger {
+  background: var(--drag-danger-color);
+}
+
+.btn-controls {
+  display: flex;
+}
+
+.btn-controls button#show-answer {
+  order: 3;
+}
+
+.btn-controls button#reset {
+  order: 2;
+  margin: 0 5px;
+}
+
+.btn-controls button#check-answer {
+  order: 1;
+}
